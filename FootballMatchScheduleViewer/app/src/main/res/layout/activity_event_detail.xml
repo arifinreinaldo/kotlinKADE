@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5">
+
+                <ImageView
+                    android:id="@+id/homeBadge"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/homeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/homeBadge"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/homeScore"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vs_string"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/awayScore"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5">
+
+                <ImageView
+                    android:id="@+id/awayBadge"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/awayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/awayBadge"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/homeGoals"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="@string/goal_string"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/awayGoals"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/homeShots"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="@string/shot_string"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/awayShots"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/line_string"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/homeGoalKeeper"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="@string/gk_string"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/awayGoalKeeper"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/homeDefense"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="@string/def_string"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/awayDefense"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/homeMidfield"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="@string/mid_string"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/awayMidfield"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/homeForward"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="@string/fwd_string"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/awayForward"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/homeSubs"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:text="@string/sub_string"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/awaySubs"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:gravity="left" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
